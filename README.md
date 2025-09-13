@@ -15,6 +15,7 @@ It follows the **Page Object Model (POM)** and is designed to be **clean, scalab
 Project Structure
 
 playwright-python/
+
     ├─ pages/               # Page Objects
     │  ├─ google_page.py
     │  ├─ login_page.py
@@ -32,47 +33,47 @@ playwright-python/
     └─ README.md            # Project documentation
 
 ⚙️ Setup Instructions
-1. Clone the repo
-    git clone https://github.com/<your-username>/playwright-with-python.git
-    cd playwright-with-python
 
-2. Create & activate virtual environment
-    python3 -m venv .venv
-    source .venv/bin/activate   # On Linux/Mac
-    # .venv\Scripts\activate    # On Windows
+1. Clone the repo    
+ git clone https://github.com/"your-username"/playwright-with-python.git   
+cd playwright-with-python
 
-3. Install dependencies
-    pip install -r requirements.txt
+2. Create & activate virtual environment   
+    python3 -m venv .venv  
+    source .venv/bin/activate   # On Linux/Mac    
 
-4. Install Playwright browsers & dependencies
-    python -m playwright install
-    python -m playwright install-deps   # only for Linux
+3. Install dependencies   
+    pip install -r requirements.txt   
+
+4. Install Playwright browsers & dependencies   
+    python -m playwright install  
+    python -m playwright install-deps  # only for Linux   
 
 
-Run all tests (headless by default):
-    pytest -q
-    Run in headed mode:
-    PLAYWRIGHT_HEADLESS=0 pytest -q
+Run all tests (headless by default):   
+    pytest -q   
+    Run in headed mode:   
+    PLAYWRIGHT_HEADLESS=0 pytest -q   
 
-Run a specific test:
-    pytest tests/test_login.py -q
+Run a specific test:   
+    pytest tests/test_login.py -q   
 
-Run with markers (smoke, regression):
-    pytest -m smoke -q
+Run with markers (smoke, regression):   
+    pytest -m smoke -q   
 
-Generate HTML report:
-    pytest --html=report.html -q
+Generate HTML report:   
+    pytest --html=report.html -q   
 
-📊 Test Reports
-    HTML report: report.html
-    Screenshots on failure: stored in artifacts/screenshots/
-    Logs: stored in logs/test.log
+📊 Test Reports   
+    HTML report: report.html   
+    Screenshots on failure: stored in artifacts/screenshots   
+    Logs: stored in logs/test.log   
 
-🌐 Demo Website
-    Tests are executed against public demo sites like:
-    https://the-internet.herokuapp.com
+🌐 Demo Website   
+    Tests are executed against public demo sites like:   
+    https://the-internet.herokuapp.com   
 
-🔮 Next Steps
-    Add CI/CD pipelines (GitHub Actions, Jenkins)
-    Add advanced test cases (file upload, downloads, shadow DOM, API testing)
-    Add parallel execution & cloud browser testing (BrowserStack, Playwright Cloud)
+🔮 Next Steps   
+    Add CI/CD pipelines (GitHub Actions, Jenkins)   
+    Add advanced test cases (file upload,    downloads, shadow DOM, API testing)      
+    Add parallel execution & cloud browser testing (BrowserStack, Playwright Cloud)   
